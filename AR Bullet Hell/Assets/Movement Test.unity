@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 1284674341}
   - component: {fileID: 1284674340}
   - component: {fileID: 1284674339}
+  - component: {fileID: 1284674342}
   m_Layer: 5
   m_Name: MoveLeft
   m_TagString: Untagged
@@ -286,6 +287,36 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1284674337}
   m_CullTransparentMesh: 0
+--- !u!114 &1284674342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1284674337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1922767623}
+          m_MethodName: MoveLeft
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1386160247
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +328,7 @@ GameObject:
   - component: {fileID: 1386160251}
   - component: {fileID: 1386160250}
   - component: {fileID: 1386160249}
+  - component: {fileID: 1386160252}
   m_Layer: 5
   m_Name: MoveRight
   m_TagString: Untagged
@@ -397,6 +429,36 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1386160247}
   m_CullTransparentMesh: 0
+--- !u!114 &1386160252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386160247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1922767623}
+          m_MethodName: MoveRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1398334171
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,6 +469,7 @@ GameObject:
   - component: {fileID: 1398334174}
   - component: {fileID: 1398334173}
   - component: {fileID: 1398334172}
+  - component: {fileID: 1398334175}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -474,6 +537,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 83, y: 0, z: 0}
+--- !u!114 &1398334175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1398334171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01452f2da66e54efc8404cbfc207bb77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1398334173}
+  moveLeft: {fileID: 1284674339}
+  moveRight: {fileID: 1386160249}
 --- !u!1 &1540615654
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +681,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 36
+  m_Constraints: 92
   m_CollisionDetection: 0
 --- !u!65 &1922767612
 BoxCollider:
@@ -738,6 +815,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6480842, y: 0.31556606, z: 1.1977425}
   m_Center: {x: 0.031278133, y: 1.251483, z: -3.6171055}
+--- !u!114 &1922767623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1922767610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 631946eff71534fb3bb4f6d25ba4f566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
 --- !u!1 &2094081044
 GameObject:
   m_ObjectHideFlags: 0
