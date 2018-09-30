@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
+[System.Serializable]
+public class Boundary
+{
+	public float minLeft, minRight;	
+}
+
 public class PlayerMovement : MonoBehaviour 
 {
 
@@ -12,11 +18,14 @@ public class PlayerMovement : MonoBehaviour
 	private Vector3 moveDir;
 	private Rigidbody rb;
 	private bool isMoving;
+	[SerializeField]
+	private Boundary boundary;
 
 	// Use this for initialization
 	void Start () 
 	{
-		//isMoving = false;
+		isMoving = false;
+		rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -39,18 +48,20 @@ public class PlayerMovement : MonoBehaviour
 			moveDir = new Vector3(moveH, 0);
             transform.position += moveDir.normalized * moveSpeed * Time.deltaTime;
 		}
+
+		rb.position = new Vector3(Mathf.Clamp(rb.position.x, boundary.minLeft, boundary.minRight), 0);
 		Debug.Log("moveHorizontal = " + moveH);
 	}
 
-	//public void OnMoveDown() 
-	//{
-	//	isMoving = true;	
-	//}
+	public void OnMoveDown() 
+	{
+		isMoving = true;	
+	}
 
-	//public void OnMoveUp()
-    //{
-    //    isMoving = false;
-    //}
+	public void OnMoveUp()
+    {
+        isMoving = false;
+    }
     
 	//public void MoveLeft() 
 	//{

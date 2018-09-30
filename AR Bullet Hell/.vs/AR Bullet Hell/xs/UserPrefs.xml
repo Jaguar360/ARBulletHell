@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{7BE2CA34-6C92-420D-353B-5EB08D984A5F}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMovement.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="4" Column="1" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="13" Column="18" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="53" Column="6" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="3" Column="19" />
       <File FileName="../../ggjam-2018/Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
-      <File FileName="../../quaternion-quest/Quaternion Quest/Assets/Scripts/PlayerOW.cs" Line="30" Column="41" />
+      <File FileName="../../quaternion-quest/Quaternion Quest/Assets/Scripts/PlayerOW.cs" Line="28" Column="13" />
       <File FileName="../../ggjam-2018/Assets/Scripts/GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
