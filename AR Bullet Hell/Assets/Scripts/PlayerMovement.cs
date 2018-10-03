@@ -11,7 +11,8 @@ public class Boundary
 
 public class PlayerMovement : MonoBehaviour 
 {
-
+	[SerializeField]
+	FixedJoystick joystick;
 	[SerializeField]
 	private float moveSpeed;
 	private float moveH;
@@ -36,12 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		//if (Input.GetButton("Left")) 
-		//{
-		//	transform.position += Vector3.left * moveSpeed * Time.deltaTime;	
-		//}
-
-		moveH = CrossPlatformInputManager.GetAxisRaw("Horizontal");
+		moveH = joystick.Horizontal;
 		isMoving = (Mathf.Abs(moveH) > 0);
 		if (isMoving == true)
 		{
@@ -52,30 +48,4 @@ public class PlayerMovement : MonoBehaviour
 		rb.position = new Vector3(Mathf.Clamp(rb.position.x, boundary.minLeft, boundary.minRight), 0);
 		Debug.Log("moveHorizontal = " + moveH);
 	}
-
-	public void OnMoveDown() 
-	{
-		isMoving = true;	
-	}
-
-	public void OnMoveUp()
-    {
-        isMoving = false;
-    }
-    
-	//public void MoveLeft() 
-	//{
-	//	if (isMoving == true) 
-	//	{
- //           transform.position += Vector3.left * moveSpeed * Time.deltaTime;
-	//	}
-	//}
-
-	//public void MoveRight()
-  //  {
-		//if (isMoving == true)
-    //    {
-    //        transform.position += Vector3.right * moveSpeed * Time.deltaTime;
-    //    }
-    //}
 }

@@ -177,7 +177,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1525805525}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -448,7 +448,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1425715968
 Prefab:
@@ -547,6 +547,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114859346367353968, guid: ce5089f3caa5bb042a4d4c23a427bc82,
+        type: 2}
+      propertyPath: joystickMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce5089f3caa5bb042a4d4c23a427bc82, type: 2}
   m_IsPrefabAsset: 0
@@ -555,6 +560,12 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224070147403872398, guid: ce5089f3caa5bb042a4d4c23a427bc82,
     type: 2}
   m_PrefabInternal: {fileID: 1425715968}
+--- !u!114 &1425715970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114859346367353968, guid: ce5089f3caa5bb042a4d4c23a427bc82,
+    type: 2}
+  m_PrefabInternal: {fileID: 1425715968}
+  m_Script: {fileID: 11500000, guid: cecce8d3f549de045bea5fd79de9e7cb, type: 3}
 --- !u!1 &1525805523
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +576,7 @@ GameObject:
   - component: {fileID: 1525805526}
   - component: {fileID: 1525805525}
   - component: {fileID: 1525805524}
+  - component: {fileID: 1525805527}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -630,8 +642,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 83, y: 0, z: 0}
+--- !u!114 &1525805527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1525805523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01452f2da66e54efc8404cbfc207bb77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1525805525}
+  joystick: {fileID: 1425715970}
 --- !u!1001 &2107811929
 Prefab:
   m_ObjectHideFlags: 0
@@ -671,6 +696,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114522540533414296, guid: 17db985b594a446ea953a67d3142cad1,
+        type: 2}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 114859346367353968, guid: ce5089f3caa5bb042a4d4c23a427bc82,
+        type: 2}
+    - target: {fileID: 114872198339385294, guid: 17db985b594a446ea953a67d3142cad1,
+        type: 2}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1425715970}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17db985b594a446ea953a67d3142cad1, type: 2}
   m_IsPrefabAsset: 0

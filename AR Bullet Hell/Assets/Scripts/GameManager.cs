@@ -7,11 +7,9 @@ public class GameManager : MonoBehaviour
 
 	[SerializeField]
 	private Camera cam;
-
+    
 	[SerializeField]
-	private UnityEngine.UI.Button moveLeft;
-	[SerializeField]
-	private UnityEngine.UI.Button moveRight;
+	private FixedJoystick joystick;
 
 	private bool isAlive;
 
