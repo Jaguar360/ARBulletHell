@@ -1,12 +1,15 @@
 ﻿<Properties StartupConfiguration="{7BE2CA34-6C92-420D-353B-5EB08D984A5F}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GoogleARCore/Examples/Common/Scripts/DetectedPlaneVisualizer.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="40" Column="1" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="10" Column="5" />
       <File FileName="../../ggjam-2018/Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
       <File FileName="../../quaternion-quest/Quaternion Quest/Assets/Scripts/PlayerOW.cs" Line="28" Column="13" />
       <File FileName="../../ggjam-2018/Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ARController.cs" Line="1" Column="1" />
+      <File FileName="Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" Line="220" Column="10" />
+      <File FileName="Assets/GoogleARCore/Examples/Common/Scripts/DetectedPlaneVisualizer.cs" Line="228" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
