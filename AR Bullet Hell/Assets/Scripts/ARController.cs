@@ -47,8 +47,11 @@ public class ARController : MonoBehaviour
 
 		// Check if user touched a detected plane
 		TrackableHit hit;
-		if (Frame.Raycast(touch.position.x, touch.position.y, TrackableHitFlags.PlaneWithinPolygon, out hit)) 
+		TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
+                TrackableHitFlags.FeaturePointWithSurfaceNormal;
+		if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit)) 
 		{
+			Debug.Log("Detected Plane touched");
 			// place object on top of detected plane
 			Portal.SetActive(true);
 
