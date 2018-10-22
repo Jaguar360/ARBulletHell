@@ -6,7 +6,11 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerMovement : MonoBehaviour 
 {
 	[SerializeField]
+	private GameObject player;
+	[SerializeField]
 	FixedJoystick joystick;
+	[SerializeField]
+	private Camera ARCamera;
 	[SerializeField]
 	private float moveSpeed;
 	private float moveH;
@@ -17,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 	private GameObject boundaryLeft;
 	[SerializeField]
 	private GameObject boundaryRight;
+	private Vector3 playerRot;
 
 	// Use this for initialization
 	void Start () 
@@ -32,8 +37,14 @@ public class PlayerMovement : MonoBehaviour
 		{
 			Debug.Log("The screen has been touched.");	
 		}
-	}
 
+		playerRot = player.transform.eulerAngles;
+
+		playerRot.y = ARCamera.gameObject.transform.eulerAngles.y;
+
+		player.transform.eulerAngles = playerRot;
+	}
+    
 	void FixedUpdate()
 	{
 		moveH = joystick.Horizontal;
