@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 114872198339385294}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,8 +429,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 631946eff71534fb3bb4f6d25ba4f566, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   joystick: {fileID: 0}
+  ARCamera: {fileID: 0}
   moveSpeed: 12
-  boundary:
-    minLeft: -40
-    minRight: 40
+  boundaryLeft: {fileID: 0}
+  boundaryRight: {fileID: 0}
