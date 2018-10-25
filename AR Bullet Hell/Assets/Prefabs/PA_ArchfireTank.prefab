@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4799575763328408}
   - component: {fileID: 54697393560766026}
   - component: {fileID: 65821557529093206}
+  - component: {fileID: 114043874593593194}
   m_Layer: 0
   m_Name: PA_ArchfireTank
   m_TagString: Enemy
@@ -287,3 +288,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.75188, y: 2.6809146, z: 3.799708}
   m_Center: {x: 0.056710817, y: 0.84045696, z: 0.048740007}
+--- !u!114 &114043874593593194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1364451969413298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7347c7fc882184f86a233674eb0be2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

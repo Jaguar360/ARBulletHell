@@ -8,6 +8,7 @@ public class BulletScript : MonoBehaviour
     public float lifeDuration = 2f;
     public float lifeTimer;
 	GameManager gameManager;
+	private Enemy enemy;
 
     // Use this for initialization
     void Start()
@@ -33,7 +34,8 @@ public class BulletScript : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Enemy") 
 		{
-			Destroy(other.gameObject);
+			enemy = other.GetComponent<Enemy>();
+			enemy.MakeDead(true);
 			// award points to player
 			gameManager.AddScore(1000);
 		}

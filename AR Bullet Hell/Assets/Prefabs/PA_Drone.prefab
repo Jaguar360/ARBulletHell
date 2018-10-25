@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 95117338816024576}
   - component: {fileID: 54161835051405202}
   - component: {fileID: 65773924157081728}
+  - component: {fileID: 114553332760759306}
   m_Layer: 0
   m_Name: PA_Drone
   m_TagString: Enemy
@@ -452,3 +453,14 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114553332760759306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845350935395046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7347c7fc882184f86a233674eb0be2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -17,13 +17,13 @@ public class GameManager : MonoBehaviour
 	[SerializeField]
 	private GameObject[] spawns;
 	[SerializeField]
-	private GameObject[] enemies;
+	private Enemy[] enemies;
 	[SerializeField]
-	private GameObject tank;
+	private Enemy tank;
 	[SerializeField]
-	private GameObject drone;
+	private Enemy drone;
 	[SerializeField]
-	private GameObject warrior;
+	private Enemy warrior;
 
 	private bool isAlive;
 	private int score;
@@ -57,15 +57,21 @@ public class GameManager : MonoBehaviour
 			timerText.text = "Time: " + min + ":" + sec;
 		}
 
-		for (int i = 0; i < spawns.Length; i++) 
-		{
-			if (enemies[i] == null) 
-			{
-				// instantiate random enemy at spawn's transform values after 3 seconds
-				StartCoroutine(SpawnWait(4, i));
-				Debug.Log("Enemy number" + i + "has been replaced");
-			}
-		}
+
+	}
+
+	private void LateUpdate()
+	{
+		for (int i = 0; i < spawns.Length; ++i)
+        {
+			if (enemies[i].IsDead() == true)
+            {
+                // instantiate random enemy at spawn's transform values after 3 seconds
+                StartCoroutine(SpawnWait(4, i));
+                enemies[i].MakeDead(false);
+                // Debug.Log("Enemy number" + i + "has been replaced");
+            }
+        }
 	}
 
 	public bool IsAlive() 
@@ -98,16 +104,19 @@ public class GameManager : MonoBehaviour
         if (ran <= 3)
         {
             enemies[i] = Instantiate(tank, spawns[i].transform);
+			enemies[i].MakeDead(false);
 			Debug.Log("tank");
         }
         else if (ran <= 6 && ran > 3)
         {
-            enemies[i] = Instantiate(drone, spawns[i].transform);
+			enemies[i] = Instantiate(drone, spawns[i].transform);
+            enemies[i].MakeDead(false);
 			Debug.Log("drone");
         }
         else if (ran <= 9 && ran > 6)
         {
-            enemies[i] = Instantiate(warrior, spawns[i].transform);
+			enemies[i] = Instantiate(warrior, spawns[i].transform);
+            enemies[i].MakeDead(false);
 			Debug.Log("warrior");
         }
 	}
