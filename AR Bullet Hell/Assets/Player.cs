@@ -14,11 +14,12 @@ public class Player : MonoBehaviour {
 		alive = true;
 	}
 
-	private void Update()
+	void Update()
 	{
 		if (lives <= 0) 
 		{
-			alive = false;	
+			Debug.Log("Dead");
+			Living(false);	
 		}
 	}
 

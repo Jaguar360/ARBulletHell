@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
 	private int score;
 	private float startTime;
 	private int lives;
+	private bool gameover;
 
 	// Use this for initialization
 	void Start () 
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
 		timerText.text = "TIME: 0:00:00";
 		startTime = Time.time;
 		lives = 3;
+		gameover = false;
 	}
 	
 	// Update is called once per frame
@@ -49,7 +51,7 @@ public class GameManager : MonoBehaviour
 		lives = player.GetLives();
 		liveText.text = "LIVES: " + lives;
 
-		if (player.IsAlive() == true)
+		if (gameover == false)
 		{
 			score++; // score increases every frame
 			DisplayScore();
@@ -58,10 +60,6 @@ public class GameManager : MonoBehaviour
             string sec = (t % 60).ToString("f2"); // limit milliseconds to 2 decimals
             timerText.text = "Time: " + min + ":" + sec;
 		}
-		else 
-		{
-			Destroy(player);	
-		}      
 	}
 
 	private void LateUpdate()
@@ -94,6 +92,16 @@ public class GameManager : MonoBehaviour
 		{
             scoreText.text = "SCORE: " + score; 
 		}      
+	}
+
+	public void GameOver(bool isover) 
+	{
+		gameover = isover;	
+	}
+
+	public bool IsGameOver() 
+	{
+		return gameover;
 	}
 
 	public IEnumerator SpawnWait(int seconds, int i) 

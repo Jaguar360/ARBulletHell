@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
 	private float moveSpeed;
 	private float moveH;
 	private Vector3 moveDir;
-	private Rigidbody rb;
 	private bool isMoving;
 	[SerializeField]
 	private GameObject boundaryLeft;
@@ -27,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
 	void Start () 
 	{
 		isMoving = false;
-		rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -55,7 +53,16 @@ public class PlayerMovement : MonoBehaviour
             transform.position += moveDir.normalized * moveSpeed * Time.deltaTime;
 		}
 
-		rb.position = new Vector3(Mathf.Clamp(rb.position.x, boundaryLeft.transform.position.x, boundaryRight.transform.position.x), 0);
-		//Debug.Log("moveHorizontal = " + moveH);
+		if (transform.position.x <= -11) 
+		{
+			transform.position = new Vector3(-11.0f, transform.position.y, transform.position.z);
+		}
+
+		else if (transform.position.x >= 11) 
+		{
+			transform.position = new Vector3(11.0f, transform.position.y, transform.position.z);
+		}
+
+		//transform.position = new Vector3(Mathf.Clamp(transform.position.x, boundaryLeft.transform.position.x, boundaryRight.transform.position.x), 0, 0);
 	}
 }

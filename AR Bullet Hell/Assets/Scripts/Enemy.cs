@@ -6,10 +6,17 @@ public class Enemy : MonoBehaviour {
 
 	private bool dead = false;
 	public GameObject projectile;
+	private GameManager gameManager;
 
 	private void Awake()
 	{
-		StartCoroutine(Shoot());
+        gameManager = FindObjectOfType<GameManager>();
+		StartCoroutine(Shoot());      
+	}
+
+	private void Start()
+	{
+		Debug.Log("Game manager: " + gameManager);
 	}
 
 	public void MakeDead(bool ded) 
@@ -29,10 +36,10 @@ public class Enemy : MonoBehaviour {
 			Destroy(gameObject);
 		}      
 	}
-
+    
 	public IEnumerator Shoot()
     {
-		while (true) 
+		while (gameManager.IsGameOver() == false) 
 		{
             yield return new WaitForSeconds(1);
             GameObject bullet = (GameObject)Instantiate(projectile);
