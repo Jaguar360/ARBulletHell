@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour 
 {
@@ -16,6 +17,10 @@ public class GameManager : MonoBehaviour
 	private Text timerText;
 	[SerializeField]
 	private Text liveText;
+	[SerializeField]
+	private Text gameoverText;
+	[SerializeField]
+	private Button restartButton;
 	[SerializeField]
 	private Player player;
 	[SerializeField]
@@ -51,7 +56,7 @@ public class GameManager : MonoBehaviour
 		lives = player.GetLives();
 		liveText.text = "LIVES: " + lives;
 
-		if (gameover == false)
+		if (IsGameOver() == false)
 		{
 			score++; // score increases every frame
 			DisplayScore();
@@ -59,6 +64,12 @@ public class GameManager : MonoBehaviour
 			string min = ((int)t / 60).ToString();
             string sec = (t % 60).ToString("f2"); // limit milliseconds to 2 decimals
             timerText.text = "Time: " + min + ":" + sec;
+		}
+
+		else
+		{
+			restartButton.gameObject.SetActive(true);
+			gameoverText.gameObject.SetActive(true);
 		}
 	}
 
@@ -102,6 +113,11 @@ public class GameManager : MonoBehaviour
 	public bool IsGameOver() 
 	{
 		return gameover;
+	}
+
+    public void Restart()
+	{
+		SceneManager.LoadScene(0);
 	}
 
 	public IEnumerator SpawnWait(int seconds, int i) 
