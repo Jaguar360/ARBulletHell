@@ -895,7 +895,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 754330202}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2107811931}
+        m_MethodName: Shoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &754330202
@@ -2036,34 +2047,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51fcfcc444c5e43bf9f6343cfb58d77f, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &2106873129
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2106873130}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2106873130
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2106873129}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2107811931}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2107811929
 Prefab:
   m_ObjectHideFlags: 0
@@ -2163,11 +2146,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1466737327653208, guid: 17db985b594a446ea953a67d3142cad1,
     type: 2}
   m_PrefabInternal: {fileID: 2107811929}
---- !u!4 &2107811931 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4983285265284238, guid: 17db985b594a446ea953a67d3142cad1,
-    type: 2}
-  m_PrefabInternal: {fileID: 2107811929}
+--- !u!114 &2107811931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107811930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc26fa3ac74bb6428ce661c170de7df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1974937246188688, guid: a89f7fa8627a47542ba2d68f2d09c779, type: 2}
+  player: {fileID: 2107811930}
 --- !u!1 &2120408614
 GameObject:
   m_ObjectHideFlags: 0

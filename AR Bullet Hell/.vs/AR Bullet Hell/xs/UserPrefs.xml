@@ -13,6 +13,7 @@
       <File FileName="Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" Line="220" Column="10" />
       <File FileName="Assets/GoogleARCore/Examples/Common/Scripts/DetectedPlaneVisualizer.cs" Line="228" Column="10" />
       <File FileName="Assets/Virtual Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GunScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
