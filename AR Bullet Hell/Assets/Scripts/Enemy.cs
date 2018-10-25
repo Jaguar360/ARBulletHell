@@ -35,7 +35,6 @@ public class Enemy : MonoBehaviour {
 		while (true) 
 		{
             yield return new WaitForSeconds(1);
-            Debug.Log("Shooting");
             GameObject bullet = (GameObject)Instantiate(projectile);
             bullet.transform.position = transform.position + transform.forward;
             bullet.transform.forward = transform.forward;

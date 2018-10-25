@@ -8,19 +8,18 @@ public class EnemyBulletScript : MonoBehaviour
     public float lifeDuration = 2f;
     private float lifeTimer;
     GameManager gameManager;
-	private GameObject player;
+	private Player player;
 
     // Use this for initialization
     void Start()
     {
         lifeTimer = lifeDuration;
-        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * speed * Time.deltaTime;
+		transform.position -= transform.forward * speed * Time.deltaTime;
 
         lifeTimer -= Time.deltaTime;
 
@@ -34,7 +33,9 @@ public class EnemyBulletScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-			// kill player or subtract player HP
+			Debug.Log("Found player");
+			player = other.GetComponent<Player>();
+			player.SetLives(-1);
         }
     }
 }

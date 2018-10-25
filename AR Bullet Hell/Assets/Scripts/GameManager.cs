@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour
 	[SerializeField]
 	private Text timerText;
 	[SerializeField]
+	private Text liveText;
+	[SerializeField]
+	private Player player;
+	[SerializeField]
 	private GameObject[] spawns;
 	[SerializeField]
 	private Enemy[] enemies;
@@ -25,39 +29,39 @@ public class GameManager : MonoBehaviour
 	[SerializeField]
 	private Enemy warrior;
 
-	private bool isAlive;
 	private int score;
 	private float startTime;
+	private int lives;
 
 	// Use this for initialization
 	void Start () 
 	{
-		isAlive = true;
 		scoreText.text = "SCORE: 0";
 		score = 0;
 		timerText.text = "TIME: 0:00:00";
 		startTime = Time.time;
+		lives = 3;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (isAlive == true)
+		lives = player.GetLives();
+		liveText.text = "LIVES: " + lives;
+
+		if (player.IsAlive() == true)
 		{
 			score++; // score increases every frame
 			DisplayScore();
-		}
-
-		float t = Time.time - startTime;
-
-		if (isAlive == true)
-		{
+			float t = Time.time - startTime;
 			string min = ((int)t / 60).ToString();
-			string sec = (t % 60).ToString("f2"); // limit milliseconds to 2 decimals
-			timerText.text = "Time: " + min + ":" + sec;
+            string sec = (t % 60).ToString("f2"); // limit milliseconds to 2 decimals
+            timerText.text = "Time: " + min + ":" + sec;
 		}
-
-
+		else 
+		{
+			Destroy(player);	
+		}      
 	}
 
 	private void LateUpdate()
@@ -72,11 +76,6 @@ public class GameManager : MonoBehaviour
                 // Debug.Log("Enemy number" + i + "has been replaced");
             }
         }
-	}
-
-	public bool IsAlive() 
-	{
-		return isAlive;
 	}
 
     public void AddScore(int scoreAdd)
