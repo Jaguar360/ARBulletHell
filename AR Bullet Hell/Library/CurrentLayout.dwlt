@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 37
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 38
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 39
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,28 +392,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1458ffff
-    m_LastClickedID: -42988
-    m_ExpandedIDs: 1ae0ffffccfbffff00000000
+    m_SelectedIDs: 40300000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 48f5ffffa0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: GameObject
-      m_OriginalName: GameObject
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -42988
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - MainGame
+  - Main (No AR)
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -534,20 +534,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 565}
-    m_SelectedIDs: 76310000
-    m_LastClickedID: 12662
-    m_ExpandedIDs: 00000000e02b0000402c0000fa2c0000fc2c0000f62d0000002e00006a2e00008c2e0000fc2e0000382f0000422f0000643000007630000094300000a030000034310000a8310000be31000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 9c2b0000
+    m_LastClickedID: 11164
+    m_ExpandedIDs: 000000009c2b0000fe2b0000b82c0000ba2c0000b42d0000be2d0000282e00004a2e0000ba2e0000f62e0000002f00002230000034300000523000005e300000f2300000663100007c31000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,7 +575,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e02b0000402c0000fa2c0000fc2c0000f62d0000002e00006a2e00008c2e0000fc2e0000382f0000422f0000643000007630000094300000a030000034310000a8310000be310000
+    m_ExpandedIDs: 000000009c2b0000fe2b0000b82c0000ba2c0000b42d0000be2d0000282e00004a2e0000ba2e0000f62e0000002f00002230000034300000523000005e300000f2300000663100007c310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
