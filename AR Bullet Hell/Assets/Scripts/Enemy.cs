@@ -5,6 +5,12 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
 	private bool dead = false;
+	public GameObject projectile;
+
+	private void Awake()
+	{
+		StartCoroutine(Shoot());
+	}
 
 	public void MakeDead(bool ded) 
 	{
@@ -21,7 +27,18 @@ public class Enemy : MonoBehaviour {
 		if (dead == true) 
 		{
 			Destroy(gameObject);
-		}
+		}      
 	}
 
+	public IEnumerator Shoot()
+    {
+		while (true) 
+		{
+            yield return new WaitForSeconds(1);
+            Debug.Log("Shooting");
+            GameObject bullet = (GameObject)Instantiate(projectile);
+            bullet.transform.position = transform.position + transform.forward;
+            bullet.transform.forward = transform.forward;
+		}
+    }
 }

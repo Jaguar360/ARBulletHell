@@ -6,7 +6,7 @@ public class BulletScript : MonoBehaviour
 {
     public float speed = 0f;
     public float lifeDuration = 2f;
-    public float lifeTimer;
+    private float lifeTimer;
 	GameManager gameManager;
 	private Enemy enemy;
 
