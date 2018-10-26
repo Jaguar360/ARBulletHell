@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour {
 
 	private void Start()
 	{
-		Debug.Log("Game manager: " + gameManager);
+		
 	}
 
 	public void MakeDead(bool ded) 
@@ -41,7 +41,7 @@ public class Enemy : MonoBehaviour {
     {
 		while (gameManager.IsGameOver() == false) 
 		{
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
             GameObject bullet = (GameObject)Instantiate(projectile);
             bullet.transform.position = transform.position + transform.forward;
             bullet.transform.forward = transform.forward;
