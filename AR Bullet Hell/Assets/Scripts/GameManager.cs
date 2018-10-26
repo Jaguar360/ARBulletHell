@@ -38,12 +38,10 @@ public class GameManager : MonoBehaviour
 	private float startTime;
 	private int lives;
 	private bool gameover;
-	private Scene curScene;
-       
+
 	// Use this for initialization
 	void Start () 
 	{
-		curScene = SceneManager.GetActiveScene();
 		scoreText.text = "SCORE: 0";
 		score = 0;
 		timerText.text = "TIME: 0:00:00";
@@ -119,11 +117,12 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
 	{
-		SceneManager.LoadScene(curScene.name);
+		SceneManager.LoadScene(0);
 	}
 
 	public IEnumerator SpawnWait(int seconds, int i) 
 	{
+		yield return new WaitForSeconds(seconds);
         int ran = Random.Range(1, 9);
         if (ran <= 3)
         {
@@ -142,12 +141,6 @@ public class GameManager : MonoBehaviour
 			enemies[i] = Instantiate(warrior, spawns[i].transform);
             enemies[i].MakeDead(false);
 			Debug.Log("warrior");
-		}
-        yield return new WaitForSeconds(seconds);
-	}
-
-	public IEnumerator Wait(int seconds) 
-	{
-		yield return new WaitForSeconds(seconds);	
+        }
 	}
 }

@@ -97,12 +97,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   speed: 7
   lifeDuration: 4
 =======
   speed: 20
   lifeDuration: 2
 >>>>>>> parent of ac0714d... New test builds
+=======
+  speed: 10
+  lifeDuration: 3
+>>>>>>> parent of ef72548... Multiple enemy spawn issue appearing again?
 --- !u!135 &135613949320965016
 SphereCollider:
   m_ObjectHideFlags: 1
