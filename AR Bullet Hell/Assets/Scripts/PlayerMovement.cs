@@ -52,15 +52,15 @@ public class PlayerMovement : MonoBehaviour
 			moveDir = new Vector3(moveH, 0);
             transform.position += moveDir.normalized * moveSpeed * Time.deltaTime;
 		}
-
-		if (transform.position.x <= -11) 
+        
+		if (transform.position.x <= boundaryLeft.transform.position.x) 
 		{
-			transform.position = new Vector3(-11.0f, transform.position.y, transform.position.z);
+			transform.position = new Vector3(boundaryLeft.transform.position.x, transform.position.y, transform.position.z);
 		}
 
-		else if (transform.position.x >= 11) 
+		else if (transform.position.x >= boundaryRight.transform.position.x) 
 		{
-			transform.position = new Vector3(11.0f, transform.position.y, transform.position.z);
+			transform.position = new Vector3(boundaryRight.transform.position.x, transform.position.y, transform.position.z);
 		}
 
 		//transform.position = new Vector3(Mathf.Clamp(transform.position.x, boundaryLeft.transform.position.x, boundaryRight.transform.position.x), 0, 0);
