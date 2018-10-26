@@ -1,8 +1,8 @@
 Android
 PlayerPath?
-/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/AR Bullet Hell Test.apk
+/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/ARBulletHell MVP.apk
 SceneListBegin?
-Assets/MainGame.unity
+Assets/Scenes/MainGame.unity
 SceneListEnd?
 ca79e2ead709e871e4e191416387865f Assembly-CSharp.dll:.Player3DExample
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
