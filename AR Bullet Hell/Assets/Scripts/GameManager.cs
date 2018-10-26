@@ -38,10 +38,12 @@ public class GameManager : MonoBehaviour
 	private float startTime;
 	private int lives;
 	private bool gameover;
+	private Scene curScene;
 
 	// Use this for initialization
 	void Start () 
 	{
+		curScene = SceneManager.GetActiveScene();
 		scoreText.text = "SCORE: 0";
 		score = 0;
 		timerText.text = "TIME: 0:00:00";
@@ -117,7 +119,7 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
 	{
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene(curScene.name);
 	}
 
 	public IEnumerator SpawnWait(int seconds, int i) 
