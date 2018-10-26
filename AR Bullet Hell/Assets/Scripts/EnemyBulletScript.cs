@@ -34,7 +34,6 @@ public class EnemyBulletScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-			Destroy(this.gameObject);
 			player = other.GetComponent<Player>();
 			player.SetLives(-1);
 			if (player.GetLives() < 1) 
