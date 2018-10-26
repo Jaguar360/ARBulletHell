@@ -76,12 +76,17 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - _UvBottomLeftRight: {r: 0.99999994, g: 0.93485206, b: 0.00000017881393, a: 0.93485206}
     - _UvTopLeftRight: {r: 0.99999994, g: 0.065148056, b: 0.00000017881393, a: 0.065148056}
 =======
     - _UvBottomLeftRight: {r: 0, g: 0.06514788, b: 0.99999994, a: 0.06514788}
     - _UvTopLeftRight: {r: 0, g: 0.934852, b: 0.99999994, a: 0.934852}
 >>>>>>> parent of ac0714d... New test builds
+=======
+    - _UvBottomLeftRight: {r: 0, g: 0.9348521, b: 0, a: 0.065147996}
+    - _UvTopLeftRight: {r: 0.99999994, g: 0.9348521, b: 0.99999994, a: 0.065147996}
+>>>>>>> parent of ef72548... Multiple enemy spawn issue appearing again?
 =======
     - _UvBottomLeftRight: {r: 0, g: 0.9348521, b: 0, a: 0.065147996}
     - _UvTopLeftRight: {r: 0.99999994, g: 0.9348521, b: 0.99999994, a: 0.065147996}

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/build/intermediates/res/merged/debug/drawable-xhdpi_app_banner.png.flat",
+        "source": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/src/main/res/drawable-xhdpi/app_banner.png"
+    },
+    {
+        "merged": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-anydpi-v26_app_icon_round.xml.flat",
+        "source": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/src/main/res/mipmap-anydpi-v26/app_icon_round.xml"
+    },
+    {
+        "merged": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/src/main/res/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-anydpi-v26_app_icon.xml.flat",
+        "source": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/src/main/res/mipmap-anydpi-v26/app_icon.xml"
+    },
+    {
+        "merged": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/build/intermediates/res/merged/debug/mipmap-mdpi_app_icon.png.flat",
+        "source": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/src/main/res/mipmap-mdpi/app_icon.png"
+    },
+    {
+        "merged": "/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/Temp/gradleOut/build/intermediates/res/merged/debug/layout___arcore_education.xml.flat",
+        "source": "/Users/jhp/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/2f03c567a80fa119bdec42999874aadc/res/layout/__arcore_education.xml"
+    }
+]
