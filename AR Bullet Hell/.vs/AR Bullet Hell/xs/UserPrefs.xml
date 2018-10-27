@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{7BE2CA34-6C92-420D-353B-5EB08D984A5F}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyBulletScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="120" Column="29" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="120" Column="26" />
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="28" Column="20" />
       <File FileName="Assets/Scripts/ARController.cs" Line="1" Column="1" />
       <File FileName="Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" Line="220" Column="10" />

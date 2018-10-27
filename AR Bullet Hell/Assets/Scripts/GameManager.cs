@@ -10,7 +10,13 @@ public class GameManager : MonoBehaviour
 	[SerializeField]
 	private Camera cam;
 	[SerializeField]
-	private FixedJoystick joystick;   
+	private Text title;
+	[SerializeField]
+	private Button playButton;
+	[SerializeField]
+	private FixedJoystick joystick;
+	[SerializeField]
+	private Button shootButton;
 	[SerializeField]
 	private Text scoreText;
 	[SerializeField]
@@ -39,6 +45,24 @@ public class GameManager : MonoBehaviour
 	private int lives;
 	private bool gameover;
 	private Scene curScene;
+
+	void Awake()
+	{
+		for (int i = 0; i < spawns.Length; i++) 
+		{
+			enemies[i].gameObject.SetActive(false);
+			spawns[i].SetActive(false);
+		}
+        player.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
+        scoreText.gameObject.SetActive(false);
+        liveText.gameObject.SetActive(false);
+        gameoverText.gameObject.SetActive(false);
+		joystick.gameObject.SetActive(false);
+		shootButton.gameObject.SetActive(false);
+		title.gameObject.SetActive(true);
+		playButton.gameObject.SetActive(true);
+	}
 
 	// Use this for initialization
 	void Start () 
@@ -89,6 +113,17 @@ public class GameManager : MonoBehaviour
         }
 	}
 
+	public void Play() 
+	{      
+		title.gameObject.SetActive(false);
+		playButton.gameObject.SetActive(false);
+		player.gameObject.SetActive(true);
+		liveText.gameObject.SetActive(true);
+		joystick.gameObject.SetActive(true);
+		shootButton.gameObject.SetActive(true);
+		StartCoroutine(InitialSpawn(5));
+	}
+
     public void AddScore(int scoreAdd)
 	{
 		score += scoreAdd;
@@ -120,6 +155,19 @@ public class GameManager : MonoBehaviour
     public void Restart()
 	{
 		SceneManager.LoadScene(curScene.name);
+	}
+    
+	public IEnumerator InitialSpawn (int seconds) 
+	{
+		yield return new WaitForSeconds(seconds);
+        timerText.gameObject.SetActive(true);
+        scoreText.gameObject.SetActive(true);
+		for (int i = 0; i < spawns.Length; i++)
+        {         
+            spawns[i].SetActive(true);
+            enemies[i].gameObject.SetActive(true);
+        }
+
 	}
 
 	public IEnumerator SpawnWait(int seconds, int i) 
