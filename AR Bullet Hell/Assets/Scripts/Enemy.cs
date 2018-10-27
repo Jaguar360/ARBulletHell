@@ -38,14 +38,12 @@ public class Enemy : MonoBehaviour {
     
 	public IEnumerator Shoot()
     {
-		Debug.Log("shoot begin");
 		while (gameManager.IsGameOver() == false) 
 		{
             yield return new WaitForSeconds(3);
             GameObject bullet = (GameObject)Instantiate(projectile);
             bullet.transform.position = transform.position + transform.forward;
             bullet.transform.forward = transform.forward;
-			Debug.Log("shooteth");
 		}
     }
 }

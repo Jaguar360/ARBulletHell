@@ -1084,7 +1084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &689825304
 Transform:
   m_ObjectHideFlags: 0
@@ -2090,10 +2090,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 578443205}
-  title: {fileID: 0}
+  title: {fileID: 1547849058}
   playButton: {fileID: 1748357250}
   joystick: {fileID: 369843685}
-  shootButton: {fileID: 0}
+  shootButton: {fileID: 754330201}
   scoreText: {fileID: 1868962889}
   timerText: {fileID: 1255729771}
   liveText: {fileID: 265361376}
@@ -2845,7 +2845,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1466737327653208, guid: 17db985b594a446ea953a67d3142cad1, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17db985b594a446ea953a67d3142cad1, type: 2}
