@@ -198,7 +198,7 @@ aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 2d5613dfea5ebe89d441816537142920 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TouchPad
 610816792981c4d4a29fa2962eba1218 Assembly-CSharp.dll:.Enemy
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:GoogleARCore.Examples.Common.DetectedPlaneVisualizer
-7e3f8bccbfa82d98e9abd69a58eef03b Assembly-CSharp.dll:.GameManager
+1cc46e5441d05a796946f7b12fa22fb3 Assembly-CSharp.dll:.GameManager
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:GoogleARCore.Examples.ComputerVision.PointClickHandler
 e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 2f9af06a78208a67db480e9bfed4a076 Unity.TextMeshPro.dll:TMPro.TextMeshPro

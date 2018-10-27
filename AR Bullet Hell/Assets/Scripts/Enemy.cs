@@ -10,13 +10,12 @@ public class Enemy : MonoBehaviour {
 
 	private void Awake()
 	{
-        gameManager = FindObjectOfType<GameManager>();
-		StartCoroutine(Shoot());      
+        gameManager = FindObjectOfType<GameManager>();      
 	}
 
 	private void Start()
 	{
-		Debug.Log("Game manager: " + gameManager);
+        StartCoroutine(Shoot());
 	}
 
 	public void MakeDead(bool ded) 

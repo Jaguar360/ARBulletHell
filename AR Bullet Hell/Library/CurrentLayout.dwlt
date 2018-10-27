@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 763
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 185
+  controlID: 107
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 292
     height: 763
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -166,7 +166,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: Default
+  m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 186
+  controlID: 108
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 187
+  controlID: 109
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,20 +323,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 584}
-    m_SelectedIDs: 30310000
-    m_LastClickedID: 12592
-    m_ExpandedIDs: 00000000782b0000da2b00009e2c0000a02c0000a02d0000aa2d0000142e0000362e0000aa2e0000e62e0000f02e00001a3000002c3000004a30000056300000ee30000016310000623100007831000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 662e0000
+    m_LastClickedID: 11878
+    m_ExpandedIDs: 000000003e2c0000a22c0000662d0000682d00006a2e0000742e0000de2e0000002f0000742f0000b02f0000ba2f0000e43000001431000020310000b83100002c3200004232000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000782b0000da2b00009e2c0000a02c0000a02d0000aa2d0000142e0000362e0000aa2e0000e62e0000f02e00001a3000002c3000004a30000056300000ee30000016310000623100007831000000ca9a3b
+    m_ExpandedIDs: 000000003e2c0000a22c0000662d0000682d00006a2e0000742e0000de2e0000002f0000742f0000b02f0000ba2f0000e4300000f63000001431000020310000b8310000e03100002c32000042320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -482,7 +482,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 209efbffa69efbff2a9ffbffc0a0fbffead3fbff70d4fbfff4d4fbff7ad6fbff661cfcffee1cfcff741dfcfffa1efcff66cefcff3ccffcff10d0fcff9ad1fcffe677fdff8807feff6a08feff4a09feffd00afeffda1bfeff0e09ffffd809ffffce11ffff3217ffffae6bffffb2fbffff000000003e320000e8530000d8540000d6550000e6550000ea550000fc5500000c56000014560000365600003e560000505600005e5600006a5600001e7900003a8a000080cd0000061b0100442e0100
+    m_ExpandedIDs: 1a97fdffee97fdffc098fdff469afdff02d3fdff908cfeff6492feffea98feff849efeff92f0ffff7cf9ffff0000000008330000cc330000943f0000b03f0000d67c0000ee7c0000b87d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
