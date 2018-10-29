@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 	private Text gameoverText;
 	[SerializeField]
 	private Button restartButton;
+    [SerializeField]
+    private Text countdown;
 	[SerializeField]
 	private Player player;
 	[SerializeField]
@@ -41,7 +43,7 @@ public class GameManager : MonoBehaviour
 	private Enemy warrior;
 
 	private int score;
-	private float startTime;
+    private float startTime;
 	private int lives;
 	private bool gameover;
 	private Scene curScene;
@@ -58,6 +60,7 @@ public class GameManager : MonoBehaviour
         scoreText.gameObject.SetActive(false);
         liveText.gameObject.SetActive(false);
         gameoverText.gameObject.SetActive(false);
+        countdown.gameObject.SetActive(false);
 		joystick.gameObject.SetActive(false);
 		shootButton.gameObject.SetActive(false);
 		title.gameObject.SetActive(true);
@@ -73,6 +76,7 @@ public class GameManager : MonoBehaviour
 		timerText.text = "TIME: 0:00:00";
 		startTime = Time.time;
 		lives = 3;
+        countdown.text = "";
 		gameover = false;
 	}
 	
@@ -82,17 +86,28 @@ public class GameManager : MonoBehaviour
 		lives = player.GetLives();
 		liveText.text = "LIVES: " + lives;
 
-		if (IsGameOver() == false)
+        //if (countdown.IsActive()) 
+        //{
+        //    float timeLeft = 5f;
+        //    timeLeft -= Time.time;
+        //    countdown.text = "" + Mathf.Round(timeLeft);
+        //    if (timeLeft < 0)
+        //    {
+        //        countdown.gameObject.SetActive(false);
+        //    }
+        //}
+
+        if (IsGameOver() == false && timerText.IsActive())
 		{
 			score++; // score increases every frame
 			DisplayScore();
-			float t = Time.time - startTime;
+			float t = Time.time - 5 - startTime;
 			string min = ((int)t / 60).ToString();
             string sec = (t % 60).ToString("f2"); // limit milliseconds to 2 decimals
             timerText.text = "Time: " + min + ":" + sec;
 		}
 
-		else
+        else if (IsGameOver() == true)
 		{
 			restartButton.gameObject.SetActive(true);
 			gameoverText.gameObject.SetActive(true);
@@ -121,6 +136,7 @@ public class GameManager : MonoBehaviour
 		liveText.gameObject.SetActive(true);
 		joystick.gameObject.SetActive(true);
 		shootButton.gameObject.SetActive(true);
+        //countdown.gameObject.SetActive(true);
 		StartCoroutine(InitialSpawn(5));
 	}
 
