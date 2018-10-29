@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 	private Button playButton;
 	[SerializeField]
 	private FixedJoystick joystick;
+    [SerializeField]
+    private Button pauseButton;
 	[SerializeField]
 	private Button shootButton;
 	[SerializeField]
@@ -62,6 +64,7 @@ public class GameManager : MonoBehaviour
 		shootButton.gameObject.SetActive(false);
 		title.gameObject.SetActive(true);
 		playButton.gameObject.SetActive(true);
+        pauseButton.gameObject.SetActive(false);
 	}
 
 	// Use this for initialization
@@ -121,6 +124,7 @@ public class GameManager : MonoBehaviour
 		liveText.gameObject.SetActive(true);
 		joystick.gameObject.SetActive(true);
 		shootButton.gameObject.SetActive(true);
+        pauseButton.gameObject.SetActive(true);
 		StartCoroutine(InitialSpawn(5));
 	}
 

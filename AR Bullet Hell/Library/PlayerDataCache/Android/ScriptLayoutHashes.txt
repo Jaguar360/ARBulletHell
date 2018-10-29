@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/ARBulletHell MVP.apk
+/Users/jhp/Documents/GitHub/ARBulletHell/AR Bullet Hell/AR Bullet Hell Final.apk
 SceneListBegin?
 Assets/Scenes/MainGame.unity
 SceneListEnd?
@@ -21,6 +21,7 @@ c7dd12c15208b0447e101f80038706df UnityEngine.Timeline.dll:UnityEngine.Timeline.A
 64f3a13c1277a7f1324321d93d0ec13b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:GoogleARCore.CrossPlatform.XPAnchor
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:GoogleARCore.Anchor
+3de3dacd1d5040dcf786f5069577ed70 Assembly-CSharp.dll:.PauseMenu
 f6637497451c9a030c421de4a1ad5cdb Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 ce558e004881ed97017f41eabdd9f7ad Assembly-CSharp.dll:GoogleARCore.Examples.AugmentedImage.AugmentedImageExampleController
 b14b4630cc47b6e9ea8a644551a6a8cc Unity.TextMeshPro.dll:TMPro.TMP_Text
@@ -198,7 +199,7 @@ aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 2d5613dfea5ebe89d441816537142920 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TouchPad
 610816792981c4d4a29fa2962eba1218 Assembly-CSharp.dll:.Enemy
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:GoogleARCore.Examples.Common.DetectedPlaneVisualizer
-1cc46e5441d05a796946f7b12fa22fb3 Assembly-CSharp.dll:.GameManager
+1a2b954ef03f33bbf784808742161b35 Assembly-CSharp.dll:.GameManager
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:GoogleARCore.Examples.ComputerVision.PointClickHandler
 e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 2f9af06a78208a67db480e9bfed4a076 Unity.TextMeshPro.dll:TMPro.TextMeshPro
